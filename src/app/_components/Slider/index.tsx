@@ -3,6 +3,10 @@ import React from 'react';
 // Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react';
 import av from '@/app/_public/a34.webp'
+import a53 from '@/app/_public/a53.webp'
+import a14 from '@/app/_public/a14.webp'
+import a51 from '@/app/_public/a51.webp'
+import a24 from '@/app/_public/a24.webp'
 // Import Swiper styles
 import 'swiper/css';
 import 'swiper/css/pagination';
@@ -51,10 +55,107 @@ Mediatek Dimensity 1080 (6 نانومتر)
 5000 میلی آمپر ساعت
         `, price: 14000000
     },
-    { id: 2, name: 'a34', src: av, details: '', price: 14000000 },
-    { id: 3, name: 'a34', src: av, details: '', price: 14000000 },
-    { id: 4, name: 'a34', src: av, details: '', price: 14000000 },
-    { id: 5, name: 'a34', src: av, details: '', price: 14000000 },
+    {
+        id: 2, name: 'گوشی موبايل سامسونگ مدل گلکسی A53 5G ظرفیت 256 گیگابایت - رم 8 گیگابایت', src: a53, details: `
+        نوع پردازنده - CPU :
+
+Exynos 1280 (5 نانومتر)
+
+حافظه داخلی :
+
+256 گیگابایت
+
+حافظه RAM :
+
+8 گیگابایت
+
+سایز صفحه نمایش :
+
+6.5 اینچ
+
+دوربین پشت :
+
+چهارگانه 64 مگاپیکسل + 12 مگاپیکسل + 5 مگاپیکسل + 5 مگاپیکسل
+
+ظرفیت باتری :
+
+5000 میلی آمپر ساعت`, price: 14000000
+    },
+    {
+        id: 3, name: 'گوشی موبايل سامسونگ گلکسی A24 4G ظرفیت 128 گیگابایت رم 6 گیگابایت - ویتنام', src: a24, details: `نوع پردازنده - CPU :
+
+Mediatek Helio G99 (6 نانومتری)
+
+حافظه داخلی :
+
+128 گیگابایت
+
+حافظه RAM :
+
+6 گیگابایت
+
+سایز صفحه نمایش :
+
+6.5 اینچ
+
+دوربین پشت :
+
+سه گانه 50 مگاپیکسل + 5 مگاپیکسل + 2 مگاپیکسل
+
+ظرفیت باتری :
+
+5000 میلی آمپر ساعت`, price: 14000000
+    },
+    {
+        id: 4, name: 'گوشی موبايل سامسونگ مدل گلکسی A51 ظرفیت 128 گیگابایت - رم 6 گیگابایت', src: a51, details: `نوع پردازنده - CPU :
+
+Exynos 9611 (10 نانومتر)
+
+حافظه داخلی :
+
+128 گيگابايت
+
+حافظه RAM :
+
+6 گیگابایت
+
+سایز صفحه نمایش :
+
+6.5 اینچ
+
+دوربین پشت :
+
+چهارگانه 48 مگاپیکسل + 12 مگاپیکسل + 5 مگاپیکسل + 5 مگاپیکسل
+
+ظرفیت باتری :
+
+4000 میلی آمپر ساعت`, price: 14000000
+    },
+    {
+        id: 5, name: 'گوشی موبایل سامسونگ مدل Galaxy A14 ظرفیت 64 گیگابایت رم 4 گیگابایت', src: a14, details: `نوع پردازنده - CPU :
+
+Mediatek MT6769 Helio G80 (12 nm) Version-A Exynos 850 (8nm) Version-B
+
+حافظه داخلی :
+
+64 گیگابایت
+
+حافظه RAM :
+
+4 گیگابایت
+
+سایز صفحه نمایش :
+
+6.6 اینچ
+
+دوربین پشت :
+
+سه گانه 50 مگاپیکسل + 5 مگاپیکسل + 2 مگاپیکسل
+
+ظرفیت باتری :
+
+5000 میلی‌ آمپر ساعت`, price: 14000000
+    },
 ]
 
 export default function Slider() {
