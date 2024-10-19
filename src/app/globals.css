@@ -22,6 +22,7 @@
     font-display: swap;
     src: url(/fonts/Estedad.woff) format('woff');
   }
+
   html {
     font-family: 'Estedad', Verdana, Geneva, Tahoma, sans-serif;
   }
@@ -29,6 +30,10 @@
 
 * {
   direction: rtl;
+}
+
+body > div.w-full.h-auto.flex.p-20 > div > div.swiper-wrapper > div.swiper-slide.swiper-slide-active {
+  padding-bottom: 35px !important;
 }
 
 

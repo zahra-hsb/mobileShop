@@ -1,7 +1,9 @@
+import Slider from "../Slider"
+
 const MainPage = () => {
     return (
         <>
-
+            <Slider />
         </>
     )
 }

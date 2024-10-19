@@ -10,6 +10,9 @@ const config: Config = {
     extend: {
       colors: {
       },
+      backgroundImage: {
+        'a34': 'url(_public/a34.webp)'
+      }
     },
   },
   plugins: [],
