@@ -20,7 +20,10 @@ import { dataArray } from '@/app/_bin/Mobiles';
 export default function Slider() {
     return (
         <>
-            <div className='w-full h-auto flex p-10 sm:p-20'>
+            <div className='pt-10 px-20 flex items-center justify-center w-full border-b'>
+                <h3 className='text-xl font-bold py-5'>انواع گوشی های سامسونگ سری A</h3>
+            </div>
+            <div className='w-full h-auto flex p-10 sm:px-20'>
                 <Swiper
                     pagination={{
                         clickable: true,

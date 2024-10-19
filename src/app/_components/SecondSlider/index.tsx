@@ -7,28 +7,54 @@ import 'swiper/css/pagination';
 
 
 import { Pagination } from 'swiper/modules';
-import Image from 'next/image';
+import Image, { StaticImageData } from 'next/image';
 import Link from 'next/link';
-import { mobilesArray2 } from '@/app/_bin/Mobiles';
 
-const SecondSlider = () => {
+
+interface Mobile {
+    id: number,
+    name: string,
+    src: StaticImageData,
+    details: string,
+    price: number
+}
+
+interface SecondSliderProps {
+    mobilesArray2: Mobile[]
+}
+
+const SecondSlider = ({ mobilesArray2 }: SecondSliderProps) => {
     return (
         <>
             <div className='p-5 sm:p-20'>
                 <Swiper
-                    slidesPerView={4}
+                    slidesPerView={1}
                     spaceBetween={30}
                     pagination={{
                         clickable: true,
                     }}
                     modules={[Pagination]}
+                    breakpoints={{
+                        // when window width is >= 640px
+                        640: {
+                            slidesPerView: 2,
+                        },
+                        // when window width is >= 768px
+                        768: {
+                            slidesPerView: 3,
+                        },
+                        // when window width is >= 1024px
+                        1024: {
+                            slidesPerView: 4,
+                        },
+                    }}
                     className="mySwiper"
                 >
                     {mobilesArray2.length > 0 ? mobilesArray2?.map(item => (
                         <>
                             <SwiperSlide>
                                 <div className='w-full border shadow-md rounded-lg p-5 flex flex-col gap-2'>
-                                    <Image src={item.src} alt='' />
+                                    <Image src={item.src} alt='' className='' />
                                     <Link href={'#'} className='text-lg font-bold hover:text-blue-500'>{item.name}</Link>
                                     {/* <p>{item.details}</p> */}
                                     <p>{item.price}</p>
