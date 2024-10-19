@@ -65,6 +65,7 @@ export default function Slider() {
                     pagination={{
                         clickable: true,
                     }}
+                    spaceBetween={10}
                     modules={[Pagination]}
                     className="mySwiper"
                 >
