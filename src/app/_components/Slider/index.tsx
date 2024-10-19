@@ -23,7 +23,33 @@ interface Mobile {
 
 
 const dataArray: Mobile[] = [
-    { id: 1, name: 'a34', src: av, details: '', price: 14000000 },
+    {
+        id: 1, name: 'گوشی موبايل سامسونگ گلکسی A34 5G (SM-A346E/DSN) ظرفیت 128 گیگابایت رم 8 گیگابایت - ویتنام', src: av, details: `
+        نوع پردازنده - CPU :
+
+Mediatek Dimensity 1080 (6 نانومتر)
+
+حافظه داخلی :
+
+128 گیگابایت
+
+حافظه RAM :
+
+8 گیگابایت
+
+سایز صفحه نمایش :
+
+6.6 اینچ
+
+دوربین پشت :
+
+سه گانه 48 مگاپیکسل + 8 مگاپیکسل + 5 مگاپیکسل
+
+ظرفیت باتری :
+
+5000 میلی آمپر ساعت
+        `, price: 14000000
+    },
     { id: 2, name: 'a34', src: av, details: '', price: 14000000 },
     { id: 3, name: 'a34', src: av, details: '', price: 14000000 },
     { id: 4, name: 'a34', src: av, details: '', price: 14000000 },
@@ -33,7 +59,7 @@ const dataArray: Mobile[] = [
 export default function Slider() {
     return (
         <>
-            <div className='w-full h-auto flex p-20'>
+            <div className='w-full h-auto flex p-10 sm:p-20'>
                 <Swiper
                     pagination={{
                         clickable: true,
@@ -45,8 +71,8 @@ export default function Slider() {
                         dataArray?.map(item => (
                             <>
                                 <SwiperSlide>
-                                    <div key={item.id} className="w-full lg:flex lg:flex-row-reverse">
-                                        <div className="border-r border-b border-l border-gray-400 lg:border-t lg:border-gray-400 shadow bg-white rounded-b lg:rounded-b-none lg:rounded-r p-4 flex flex-col justify-between leading-normal w-full">
+                                    <div key={item.id} className="w-full border rounded-lg flex sm:flex-row-reverse flex-col-reverse">
+                                        <div className="border-l border-gray-300 sm:border-t sm:border-gray-300 shadow-md  rounded-b sm:rounded-b-none sm:rounded-l-lg bg-gray-50 p-4 flex flex-col justify-between leading-normal w-full">
                                             <div className="mb-8">
                                                 <p className="text-sm text-gray-600 flex items-center">
                                                     <svg className="fill-current text-gray-500 w-3 h-3 mr-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
@@ -70,7 +96,7 @@ export default function Slider() {
                                                 </div>
                                             </div>
                                         </div>
-                                        <Image src={item.src} alt='' className="h-48 lg:h-auto lg:w-48 flex-none bg-cover rounded-t lg:rounded-t-none lg:rounded-l text-center overflow-hidden" title="Woman holding a mug">
+                                        <Image src={item.src} alt='' className="h-48 sm:h-auto sm:w-48 flex-none bg-cover rounded-lg rounded-t sm:rounded-t-none sm:rounded-l text-center overflow-hidden" title="Woman holding a mug">
                                         </Image>
                                     </div >
                                 </SwiperSlide>
